@@ -1,13 +1,13 @@
 use map_site::MapSite;
 
-struct Room {
+pub struct Room {
     room_number: u32,
-    sides: vec!<map_site>,
+    // sides: [MapSite; 4],  // TO-DO: How to define array or vector for MapSite objects?
 }
 
 impl Room {
     // Constructor
-    fn room(number: u32) -> Room {
+    pub fn room(number: u32) -> Room {
         unimplemented!();
     }
 }
