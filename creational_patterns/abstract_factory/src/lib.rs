@@ -2,7 +2,15 @@ pub mod map_site;  // trait to encompass walls and doors
 
 pub mod wall;      // "class" to represent a Wall
 
-pub mod wall;      // "class" to represent a doors
+pub mod door;      // "class" to represent a Door
+
+// Define directions for player movement
+enum Direction {
+    North,
+    South,
+    East,
+    West,
+}
 
 pub fn cheese() {
     // silly function to test that main can see this library
