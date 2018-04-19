@@ -1,11 +1,12 @@
 use map_site::MapSite;
 
-struct Wall {
+//#[derive(Debug, Clone, Copy)]
+pub struct Wall {
 }
 
 impl Wall {
     // Constructor
-    fn wall() -> Wall {
+    pub fn new() -> Wall {
         unimplemented!();
     }
 }

@@ -1,7 +1,7 @@
 use map_site::MapSite;
 use room::Room;
 
-struct Door {
+pub struct Door {
     room1: Room,
     room2: Room,
     is_open: bool,
@@ -9,7 +9,7 @@ struct Door {
 
 impl Door {
     // Constructor
-    fn door(room1: &Room, room2: &Room) -> Door {
+    pub fn new(room1: &Room, room2: &Room) -> Door {
         unimplemented!();
     }
 
