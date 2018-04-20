@@ -1,20 +1,23 @@
 use map_site::MapSite;
-use room::Room;
 
 pub struct Door {
-    room1: Room,
-    room2: Room,
+    room1: u32,
+    room2: u32,
     is_open: bool,
 }
 
 impl Door {
     // Constructor
-    pub fn new(room1: &Room, room2: &Room) -> Door {
-        unimplemented!();
+    pub fn new(room1: u32, room2: u32) -> Door {
+        Door {
+            room1: room1,  // current room (is this needed?)
+            room2: room2,  // room you enter when entering this door
+            is_open: false,
+        }
     }
 
-    pub fn other_side_of_door(&self) -> Room {
-        unimplemented!();
+    pub fn other_side_of_door(&self) -> u32 {
+        self.room2
     }
 }
 

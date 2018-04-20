@@ -6,6 +6,8 @@ pub mod door;      // "class" to represent a Door
 
 pub mod room;      // "class" to represent a Room
 
+pub mod maze;      // "class" to represent a Maze ()
+
 // Define directions for player movement
 enum Direction {
     North,
