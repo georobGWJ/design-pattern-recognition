@@ -9,8 +9,11 @@ pub struct Room {
 
 impl Room {
     // Constructor
-    pub fn room(number: u32) -> Room {
-        unimplemented!();
+    pub fn new(number: u32, sides: Vec<Box<MapSite>>) -> Room {
+        Room {
+            room_number: number,
+            sides: sides,
+        }
     }
 }
 
