@@ -1,7 +1,5 @@
 use map_site::MapSite;
-use room::Room;
 
-//#[derive(Debug)]
 pub struct Door {
     room1: u32,
     room2: u32,
@@ -18,8 +16,8 @@ impl Door {
         }
     }
 
-    pub fn other_side_of_door(&self) -> Room {
-        unimplemented!();
+    pub fn other_side_of_door(&self) -> u32 {
+        self.room2
     }
 }
 

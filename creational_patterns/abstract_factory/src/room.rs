@@ -1,6 +1,4 @@
 use map_site::MapSite;
-use wall::Wall;
-use door::Door;
 
 pub struct Room {
     room_number: u32,
