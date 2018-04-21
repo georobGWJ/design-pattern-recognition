@@ -31,6 +31,4 @@ fn main() {
     println!("Changing a side in the room...");
     first_room.set_side(Direction::East, Box::new(wall4));
     first_room.get_side(Direction::East).enter();
-
-    abstract_factory::cheese();
 }

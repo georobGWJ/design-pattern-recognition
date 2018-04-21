@@ -1,5 +1,7 @@
 pub mod map_site;  // trait to encompass walls and doors
 
+pub mod abstract_product;  // trait to encompass concrete products
+
 pub mod wall;      // "class" to represent a Wall
 
 pub mod door;      // "class" to represent a Door
@@ -9,6 +11,9 @@ pub mod room;      // "class" to represent a Room
 pub mod maze;      // "class" to represent a Maze ()
 
 pub mod maze_game; // "class" to represent a MazeGame ()
+
+pub mod maze_factory;  // abstract factory for building mazes
+
 
 // Define directions for player movement
 pub enum Direction {
@@ -27,11 +32,6 @@ impl Direction {
             Direction::West  => 3 as usize,
         }
     }
-}
-
-pub fn cheese() {
-    // silly function to test that main can see this library
-    println!("Cheese sure is good!");
 }
 
 #[cfg(test)]
