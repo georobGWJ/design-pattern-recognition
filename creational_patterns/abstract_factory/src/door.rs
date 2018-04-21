@@ -10,8 +10,8 @@ impl Door {
     // Constructor
     pub fn new(room1: u32, room2: u32) -> Door {
         Door {
-            room1: room1,  // current room (is this needed?)
-            room2: room2,  // room you enter when entering this door
+            room1: room1,
+            room2: room2,
             is_open: false,
         }
     }
