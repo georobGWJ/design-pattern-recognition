@@ -18,6 +18,11 @@ impl Room {
         // North = 0, East = 1, South = 2, West = 3
         &self.sides[direction]
     }
+
+    pub fn set_side(&mut self, direction: usize, side: Box<MapSite>) {
+        // North = 0, East = 1, South = 2, West = 3
+        self.sides[direction] = side;
+    }
 }
 
 impl MapSite for Room {

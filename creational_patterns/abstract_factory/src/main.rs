@@ -23,8 +23,12 @@ fn main() {
         Box::new(wall2),
         Box::new(wall3)];
 
-    let first_room = Room::new(23, room_sides);
+    let mut first_room = Room::new(23, room_sides);
 
+    first_room.get_side(1).enter();
+    let wall4 = Wall::new();
+    println!("Changing a side in the room...");
+    first_room.set_side(1, Box::new(wall4));
     first_room.get_side(1).enter();
 
     abstract_factory::cheese();
