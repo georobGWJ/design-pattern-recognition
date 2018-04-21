@@ -13,6 +13,11 @@ impl Room {
             sides: sides,
         }
     }
+
+    pub fn get_side(&self, direction: usize) -> &Box<MapSite> {
+        // North = 0, East = 1, South = 2, West = 3
+        &self.sides[direction]
+    }
 }
 
 impl MapSite for Room {

@@ -24,5 +24,8 @@ fn main() {
         Box::new(wall3)];
 
     let first_room = Room::new(23, room_sides);
+
+    first_room.get_side(1).enter();
+
     abstract_factory::cheese();
 }
