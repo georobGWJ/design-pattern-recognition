@@ -1,5 +1,6 @@
 extern crate abstract_factory;
 
+use abstract_factory::Direction;
 use abstract_factory::door::*;
 use abstract_factory::wall::*;
 use abstract_factory::room::*;
@@ -25,11 +26,11 @@ fn main() {
 
     let mut first_room = Room::new(23, room_sides);
 
-    first_room.get_side(1).enter();
+    first_room.get_side(Direction::East).enter();
     let wall4 = Wall::new();
     println!("Changing a side in the room...");
-    first_room.set_side(1, Box::new(wall4));
-    first_room.get_side(1).enter();
+    first_room.set_side(Direction::East, Box::new(wall4));
+    first_room.get_side(Direction::East).enter();
 
     abstract_factory::cheese();
 }

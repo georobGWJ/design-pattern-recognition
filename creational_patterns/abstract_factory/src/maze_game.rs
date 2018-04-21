@@ -19,7 +19,7 @@ impl MazeGame {
             Box::new( Wall {} ),
             Box::new( Wall {} )];
 
-        let door = Door::new( 1, 2 );
+        let door = Door::new( 2, 1 );
         let room2_sides : Vec<Box<MapSite>> = vec![
             Box::new( Wall {} ),
             Box::new( Wall {} ),

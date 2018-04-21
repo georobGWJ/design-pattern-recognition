@@ -11,7 +11,7 @@ pub mod maze;      // "class" to represent a Maze ()
 pub mod maze_game; // "class" to represent a MazeGame ()
 
 // Define directions for player movement
-enum Direction {
+pub enum Direction {
     North,
     East,
     South,
@@ -19,12 +19,12 @@ enum Direction {
 }
 
 impl Direction {
-    fn value(&self) -> u32 {
+    fn value(&self) -> usize {
         match *self {
-            Direction::North => 0,
-            Direction::East  => 1,
-            Direction::South => 2,
-            Direction::West  => 3,
+            Direction::North => 0 as usize,
+            Direction::East  => 1 as usize,
+            Direction::South => 2 as usize,
+            Direction::West  => 3 as usize,
         }
     }
 }
